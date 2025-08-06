@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thank You</title>
+</head>
+<body>
+  <h1>Thank You!</h1>
+  <p id="displayNmail"></p>
+  <p id="displayEmail"></p>
+
+  <script>
+    document.getElementById("displayName").innerText = "Name: " + localStorage.getItem("name");
+    document.getElementById("displayEmail").innerText = "Email: " + localStorage.getItem("email");
+  </script>
+</body>
+</html>
+
