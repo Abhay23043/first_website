@@ -1,25 +1,68 @@
-nav ul {
-      list-style: none;  /* removes bullets */
-      padding: 0;
-      margin: 0;
-    }
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    nav ul li {
-      display: inline;  /* aligns items in one line */
-      margin-right: 20px;
-    }
-    nav ul li a {
-      text-decoration: none;  /* removes underline from links */
-      color: #333;  /* sets link color */
-    }
-    header h1 big a {
-        font-size: 1.5em;  /* sets the size of the main heading */
-        color: #1f1f1f;  /* sets the color of the main heading */
-    }
-    header{
-        background-color: rgb(224, 219, 211);
-    }
-    main{
+/* Make header full-width and black */
+header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 5px 0; /* Optional: adds spacing inside header */
+    text-align: center;
+}
+
+/* SEO heading style */
+header h1 a {
+    color: red;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #660b0b;
+    ;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+   main{
         text-align: center;  /* centers the content */
-        padding: 20px;  /* adds padding around the main content */
+        padding: 10px;  /* adds padding around the main content */
+        background-color: rgb(234, 230, 230);
     }
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+header nav ul li a:hover {
+    color: #625757; /* Change to red on hover */
+    text-decoration: underline;
+}
+header h1 a:hover{
+    color: #625757; /* Change to red on hover */
+     
+}
+footer p a:hover{
+    color: #625757; /* Change to red on hover */
+    text-decoration: underline;
+}

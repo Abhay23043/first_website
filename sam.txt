@@ -1,0 +1,5 @@
+
+    main{
+        text-align: center;  /* centers the content */
+        padding: 20px;  /* adds padding around the main content */
+    }

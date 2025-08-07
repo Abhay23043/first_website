@@ -12,13 +12,24 @@
             padding: 0 20px;
             color: rgb(51, 49, 49);
         }
+        .submit-button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>
             <big>
-                <a href="home.html">SEO</a>
+                <a href="index.html">SEO</a>
             </big>
         </h1>
         <nav>
@@ -57,7 +68,7 @@
     <label for="feedback">Your Feedback:</label><br>
     <textarea id="feedback" name="feedback" rows="5" cols="40" placeholder="Write your feedback here..." required></textarea><br><br>
     
-    <input type="submit" value="Submit Feedback">
+    <input type="submit" value="Submit Feedback" class="submit-button">
     
   </form>
     </section>
