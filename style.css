@@ -1,0 +1,25 @@
+nav ul {
+      list-style: none;  /* removes bullets */
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;  /* aligns items in one line */
+      margin-right: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;  /* removes underline from links */
+      color: #333;  /* sets link color */
+    }
+    header h1 big a {
+        font-size: 1.5em;  /* sets the size of the main heading */
+        color: #1f1f1f;  /* sets the color of the main heading */
+    }
+    header{
+        background-color: rgb(224, 219, 211);
+    }
+    main{
+        text-align: center;  /* centers the content */
+        padding: 20px;  /* adds padding around the main content */
+    }
