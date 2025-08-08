@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         main section div ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0%;
             opacity: 50%;
         }
@@ -20,16 +20,45 @@
         footer p a{
             text-decoration: none;
             color: #0000ff; /* Default link color */
+
         }
+        #login_button{
+            float: right;
+            margin-right: 20px;
+            margin-top: 10px;
+            
+        }
+        #login_button input {
+            padding: 5px 10px;
+            background-color: #232524; /* Green */
+            color: white;
+            border-radius: 5px;
+            border: 1px solid white;
+            cursor: pointer;
+
+        }
+        #login_button input:hover {
+            background-color: #454a45; /* Darker green on hover */
+        }
+        #login_button input:active{
+            transform:scale(0.95); 
+        }
+
+        
     </style>
 </head>
 <body>
     <header>
+        <div id="login_button">
+            <label for="login"></label>
+            <input type="button" onclick="window.location.href='login.html'" value="login" id="login" title="Login to your account">
+        </div>
         <h1>
             <big>
                 <a href="index.html" title="Go to home page">SEO</a>
             </big>
         </h1> 
+        
         <nav>
             <ul>
                 <li><a href="home.html" title="Home page">Home</a></li>
@@ -39,6 +68,7 @@
                 <li><a href="feedback.html" title="Feedback">Feedback</a></li>
             </ul>
         </nav>
+        
     </header>
 <hr>
     <main>

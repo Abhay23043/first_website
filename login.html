@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login or Sign up to your account for a personalized experience.">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Log in/Sign up to your account</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #login{
+            text-align: center;
+            margin: 10px;
+        }
+        #login input {
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #login input:hover{
+            color: #7c7a7a;
+        }
+        #signup{
+            text-align: center;
+            margin: 10px;
+        }
+        #signup input{
+            padding: 10px 20px;
+            background-color: blue; /* Blue */
+            color: white;
+            border:none;
+            border-radius: 5px; /* curverd the corners */
+            cursor: pointer;
+        }
+        #signup input:hover{
+            color: #7c7a7a;
+        }
+        footer p a {
+            text-decoration: none;
+            color: #0000ff; /* Default link color */
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <h1>
+            <big>
+                <a href="index.html" title="Go to home page">SEO</a>
+            </big>
+        </h1> 
+        
+        <nav>
+            <ul>
+                <li><a href="home.html" title="Home page">Home</a></li>
+                <li><a href="about.html" title="About me">About</a></li>
+                <li><a href="contact.html" title="Contact me">Contact</a></li>
+                <li><a href="services.html" title="Services">Services</a></li>
+                <li><a href="feedback.html" title="Feedback">Feedback</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1>Login or Sign Up</h1>
+                <p>Please choose an option below:</p>
+                <div id="login">
+                    <input type="button" value="Login" onclick="window.location.href='login_form.html'" title="Login to your account">
+                </div>
+                <div id="signup">
+                    <input type="button" value="Sign Up" onclick="window.location.href='signup_form.html'" title="Create a new account">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><i>Thank you for visiting our site!</i></p>
+        <p>For more information, feel free to explore the other pages or contact us. <a href="contact.html" title="Contact us">Contact us</a></p>
+    </footer>
+</body>
+</html>

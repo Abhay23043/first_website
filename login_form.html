@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Login to your account for a personalized experience.">
+    <title>Login_form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #username{
+            border: none;
+            border-radius: 15px;
+        }
+        #password{
+            height: 30px;
+            border: none;
+            border-radius: 15px;
+        }
+        input{
+            text-align: center;
+            font-size: 13.5px;
+        }
+        textarea{
+            text-align: center;
+            font-size:16px;
+            width: 300px;
+            height: 30px;
+            
+        }
+        #submit_button input{
+            padding: 10px;
+            width: 100px;
+            border-radius:15px;
+            background-color: rgb(106, 203, 132);
+        }
+        #submit_button input:hover{
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+        }
+        #submit_button input:active{
+            transform: scale(0.95);
+            color: rgb(0, 0, 0);
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <big>
+                <a href="index.html" title="Go to home page">SEO</a>
+            </big>
+        </h1> 
+        
+        <nav>
+            <ul>
+                <li><a href="home.html" title="Home page">Home</a></li>
+                <li><a href="about.html" title="About me">About</a></li>
+                <li><a href="contact.html" title="Contact me">Contact</a></li>
+                <li><a href="services.html" title="Services">Services</a></li>
+                <li><a href="feedback.html" title="Feedback">Feedback</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <div>
+                 <img src="loginbg.png" alt="login png" width="50" height="50">
+            </div>
+            <div>
+                <big>
+                    Log in here!!
+                </big>
+            </div>
+            <br> <br>
+        </section>
+            <section>
+                <form action="submit.php" method="post">
+                    <div id="username">
+                        <label for="username"></label>
+                        <textarea type="text" name="username"id="username" placeholder=" Enter your Username" rows="2" cols="40"></textarea>
+
+                    </div>
+                    <br> <br>
+                    <div id="password">
+                        <label for="password"></label>
+                        <input type="password" name="password" id="password" placeholder=" Enter your password" size="40"></textarea>
+                    </div>
+                    <br>
+                    <div id="submit_button">
+                        <input type="submit" value="Login"  id="login" title="Login to your account">
+                    </div>
+                </form>
+                    
+            </section>
+            <section>
+                <div id="policy" style="font-size: small;">
+                    <p>
+                        <i>After taping on login you agree all the <a href="">terms & conditions</a>
+                    </p></i>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div id="foot">
+            
+        </div>
+    </footer>
+</body>
+</html>
+     

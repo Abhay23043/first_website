@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page
+
+    </title>
+
+    <style>
+        body{
+            background:linear-gradient(to right, #ff7e5f, #f9c298); 
+             
+        }
+        #signup {
+            width: 800px;
+            height: 400px;
+            margin: 100px auto;
+            padding: 80px;
+            background:linear-gradient(to right, #ff7e5f, #f9c298);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+            
+        }
+        #signup h1{
+            color:rgb(56, 55, 55);
+            font-style: oblique;
+            font: 800 20px;
+            
+        }
+        #signup input{
+            padding: 10px;
+            margin: 5px;
+            border-radius: 15px;
+        }
+        #others{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            
+        }
+        #inline{
+            display:flex;
+            flex-direction: row;
+            
+        }
+      
+        #signupbutton input{
+            width: 200px;
+            background-color: rgb(12, 12, 12);
+            color: white;
+            border:none;
+            text-align: center;
+
+
+        }
+        #signupbutton input:hover{
+            background-color: rgb(3, 38, 10);
+            cursor: pointer;
+            
+        }
+         #signupbutton input:active{
+            background-color: rgb(58, 2, 2);
+         }
+
+        .links{
+            display: flex;
+            flex-direction: column;
+            margin-left: 180px;
+        }
+       #loginpara{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+       }
+       #Email{
+        display: flex;
+       }
+       #loginpara{
+           color:rgb(0,0,0)
+
+
+       }
+       #loginpara a{
+        color:blue;
+        text-decoration: none;
+
+        }
+        #loginpara a:hover{
+            color:red;
+            text-decoration: underline;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div id="signup">
+        <h1>Sign Up</h1>
+        <form action="submit.php" method="post">
+            <section id="inline">
+                <label for="Full Name"></label>
+                <input type="text" id="Full Name" name="Full Name" placeholder="Full Name" size="35" required>
+                  <section class="links">
+                <div id="signupbutton">
+                    <label for="signup button"></label>
+                    <input type="button" id="signup button" name="signup button" value="Sign Up" onclick="alert('Sign Up Successful! double click to redirect to Login')" title="Sign Up for a new account" ondblclick="window.location.href='login_form.html'">
+                </div>
+                
+
+                </section>
+            </section>
+             <div id="others">
+                <div id="Email">
+                <label for="Email Address"></label>
+                <input type="text" id="Email Address" name="Email Address" placeholder="Email Address" size="35" required>
+                
+                </div>
+                
+            
+         
+                <label for="Password"></label>
+                <input type="password" id="Password" name="Full Name" placeholder="Password" size="35" required>
+                <label for="Re-type password"></label>
+                <input type="password" id="Re-type password" name="Re-type password" placeholder="Re-type password" size="35" required>
+
+            </div>
+            <section id="loginpara">
+                <p>By signing up, you agree to our <a href="terms.html"><b>Terms of Service</b></a> and <a href="privacy.html"><b>Privacy Policy</b></a>.</p>
+                
+
+            </section>
+          
+            
+
+        </form>
+
+    </div>
+</body>
+</html>

@@ -40,11 +40,14 @@ nav ul li a {
     font-weight: bold;
 }
 
-   main{
-        text-align: center;  /* centers the content */
-        padding: 10px;  /* adds padding around the main content */
-        background-color: rgb(234, 230, 230);
-    }
+main{
+    text-align: center;  /* centers the content */
+    padding: 10px;  /* adds padding around the maincontent */
+    background-color: rgb(202, 195, 195);
+    color:rgb(0, 0, 0);
+    min-height: 81vh; /* Ensures main content takes upat least 80% of the viewport height */
+    margin: 0 auto; /* Centers the main contenthorizontally */
+}
 footer {
     background-color: black;
     color: white;
