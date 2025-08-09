@@ -23,7 +23,7 @@ header h1 a {
 
 /* Navigation styles */
 nav ul {
-    list-style: none;
+    list-style: none; /* remove bullet points*/
     display: flex;
     justify-content: center;
     background-color: #660b0b;
@@ -35,7 +35,7 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
+    text-decoration: none; /*remove underline*/
     color: rgb(255, 255, 255);
     font-weight: bold;
 }

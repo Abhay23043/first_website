@@ -43,6 +43,18 @@
             color: rgb(0, 0, 0);
 
         }
+        .login_page{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+            width: 600px;
+            margin-left:400px;
+            margin-top:100px;
+            padding: 15px;
+            border-radius: 10px;
+            
+        }
+        footer p a{
+            color: blue;
+        }
     </style>
 </head>
 <body>
@@ -55,7 +67,7 @@
         
         <nav>
             <ul>
-                <li><a href="home.html" title="Home page">Home</a></li>
+                <li><a href="index.html" title="Home page">Home</a></li>
                 <li><a href="about.html" title="About me">About</a></li>
                 <li><a href="contact.html" title="Contact me">Contact</a></li>
                 <li><a href="services.html" title="Services">Services</a></li>
@@ -65,7 +77,7 @@
     </header>
     <hr>
     <main>
-        <section>
+        <section class="login_page">
             <div>
                  <img src="loginbg.png" alt="login png" width="50" height="50">
             </div>
@@ -75,8 +87,6 @@
                 </big>
             </div>
             <br> <br>
-        </section>
-            <section>
                 <form action="submit.php" method="post">
                     <div id="username">
                         <label for="username"></label>
@@ -93,20 +103,23 @@
                         <input type="submit" value="Login"  id="login" title="Login to your account">
                     </div>
                 </form>
-                    
-            </section>
-            <section>
                 <div id="policy" style="font-size: small;">
                     <p>
                         <i>After taping on login you agree all the <a href="">terms & conditions</a>
                     </p></i>
                 </div>
+                    
+            </section>
+            <section>
+                
             </section>
     </main>
-    <footer>
-        <div id="foot">
-            
-        </div>
+     <footer>
+        <p>&copy; 2025 Abhay Jaiswal. All rights reserved.</p>
+        <p>Follow me on 
+            <a href="https://www.linkedin.com/in/abhay-jaiswal-a3747730a/" target="_blank" rel="noopener noreferrer">LinkedIn</a> and 
+            <a href="https://www.instagram.com/abhayjais151/" target="_blank" rel="noopener noreferrer">Instagram</a>.
+        </p>
     </footer>
 </body>
 </html>

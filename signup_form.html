@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page
+    <meta name="description" content="create your account to save the data.">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <title>Sign up page
 
     </title>
 
@@ -91,10 +94,37 @@
             text-decoration: underline;
         }
         
+        .back_button #button input{
+            padding: 10px;
+            border-radius: 50px;
+            width: 120px;
+            color: aliceblue;
+            background-color: black;
+            border: none;
+        }
+        .back_button #button input:hover{
+            color: rgb(249, 0, 0);
+            text-decoration: underline;
+        }
+        .back_button #button input:active{
+            transform: scale(0.95);
+        }
+        .links #signupbutton input:hover{
+            color: red;
+            text-decoration: underline;
+        }
     
     </style>
 </head>
 <body>
+    <header>
+        <section class="back_button">
+            <div id="button">
+                <label for="back_button"></label>
+                <input type="button" title="redirect to home page" value="Back to home" onclick="window.location.href='index.html'">
+            </div>
+        </section>
+    </header>
     <div id="signup">
         <h1>Sign Up</h1>
         <form action="submit.php" method="post">
@@ -106,8 +136,6 @@
                     <label for="signup button"></label>
                     <input type="button" id="signup button" name="signup button" value="Sign Up" onclick="alert('Sign Up Successful! double click to redirect to Login')" title="Sign Up for a new account" ondblclick="window.location.href='login_form.html'">
                 </div>
-                
-
                 </section>
             </section>
              <div id="others">
@@ -116,9 +144,6 @@
                 <input type="text" id="Email Address" name="Email Address" placeholder="Email Address" size="35" required>
                 
                 </div>
-                
-            
-         
                 <label for="Password"></label>
                 <input type="password" id="Password" name="Full Name" placeholder="Password" size="35" required>
                 <label for="Re-type password"></label>

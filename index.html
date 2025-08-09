@@ -11,9 +11,16 @@
     <title>Seo 2025: A SEO friendly website. </title>
     <link rel="stylesheet" href="style.css">
     <style>
+        main{
+            margin: 0;
+            padding: 15px;
+        }
+        .secondpara{
+            margin-top: 35px;
+        }
         main section div ul {
             list-style: none;
-            padding: 0%;
+            
             opacity: 50%;
         }
       
@@ -25,26 +32,42 @@
         #login_button{
             float: right;
             margin-right: 20px;
-            margin-top: 10px;
-            
+            margin-top: 10px; 
         }
         #login_button input {
-            padding: 5px 10px;
-            background-color: #232524; /* Green */
+            padding: 6px 15px;
+            background-color: #282928; /* Green */
             color: white;
-            border-radius: 5px;
-            border: 1px solid white;
+            border-radius: 8px;
             cursor: pointer;
+            border:none;
+            
 
         }
         #login_button input:hover {
             background-color: #454a45; /* Darker green on hover */
+            color: gray;
+            text-decoration: underline;
         }
         #login_button input:active{
             transform:scale(0.95); 
         }
+        .content{
+            margin: 50px;
+            
+        }
+        .content #but input{
+            padding: 8px;
+            margin: 25px;
+            border-radius: 15px;
+            border: none;
+            
+        }
+        .content #but input:hover{
+            background-color: rgb(186, 152, 152);
+            
+        }
 
-        
     </style>
 </head>
 <body>
@@ -61,7 +84,7 @@
         
         <nav>
             <ul>
-                <li><a href="home.html" title="Home page">Home</a></li>
+                <li><a href="index.html" title="Home page">Home</a></li>
                 <li><a href="about.html" title="About me">About</a></li>
                 <li><a href="contact.html" title="Contact me">Contact</a></li>
                 <li><a href="services.html" title="Services">Services</a></li>
@@ -72,7 +95,6 @@
     </header>
 <hr>
     <main>
-        <h1>HOME</h1>
         <section>
             <h2>Welcome to my SEO friendly website</h2>
             <p>This website is designed to be user-friendly and optimized for search engines.</p>
@@ -81,7 +103,7 @@
         <section>
             <h2>
                 <p>
-                    <div>
+                    <div class="secondpara">
                         we offer a variety of services to help you succeed online.
                         <br>
                     </div>
@@ -99,6 +121,17 @@
                     </div>
 
                 </p>
+        </section>
+        <section class="content">
+            <div id="but">
+                <label for="web"></label>
+                <input type="button" title="web_devlopment redirect btn" value="Web Development" onclick="window.location.href='htmllecture.html'" >
+                <label for="data"></label>
+                <input type="button" title="data structure redirect btn" value="Data Structure" >
+                <label for="ml"></label>
+                <input type="button" title="machine learning redirect btn" value="Machine lrarning" >
+
+            </div>
         </section>
     </main>
     <footer>

@@ -15,6 +15,24 @@
         color: #333;
         text-align: center;
        }
+       footer p a {
+            text-decoration: none;
+            color: #0000ff; /* Default link color */
+        }
+        .custombox{
+            display: flex;
+            justify-content: space-around;
+        }
+        .custombox{
+            text-align: left;
+            
+        }
+        .custombox #resourses ul li a{
+            text-decoration: none;
+            color: #2809b1;
+        }
+        
+      
     </style>
 </head>
 <body>
@@ -26,20 +44,19 @@
         </h1> 
         <nav>
             <ul>
-                <li><a href="home.html" title="Home page">Back to Home</a></li>
+                <li><a href="index.html" title="Home page">Back to Home</a></li>
             </ul>
         </nav>
     </header>
     <hr>
-    <header>
-        <div>
-            <h1> <h1>HTML(Hypertext Markup Language) lecture</h1></h1>
-        </div>
+    
         
-
-    </header>
     <main>
         <section>
+            <div>  
+             <h1>HTML(Hypertext Markup Language) lecture</h1>
+        </div>
+            </div>
             <div>
                 <p>HTML stands for HyperText Markup Language.
                    It is the basic language used to create web pages.
@@ -53,11 +70,56 @@
                 </p>
             </div>
         </section>
+        <br><br>
         <section>
             <div id="html-structure">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/BsDoLVMnmZs?si=XIUnlXm8YAxtrYUy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+                <br><br><br>
+                <div class="html_theory">
+                <h2>What you will learn</h2>
+                <p>In this course, you will learn the fundamentals of HTML, including how to structure a webpage, use various HTML elements, and create links and images. You will also explore advanced topics like forms, tables, and semantic HTML. By the end of the course, you will have a solid understanding of HTML and be able to create your own web pages.</p>
+            </div>
+            <br><br>
+        </section>
+        <section class="custombox">
+            <div id="html_theory">
+                <h2>Course Outline</h2>
+                <ul>
+                    <li>Introduction to HTML</li>
+                    <li>Basic HTML Structure</li>
+                    <li>HTML Elements and Tags</li>
+                    <li>Attributes in HTML</li>
+                    <li>Creating Links and Images</li>
+                    <li>Lists and Tables in HTML</li>
+                    <li>Forms and Input Elements</li>
+                    <li>Semantic HTML</li>
+                    <li>HTML Best Practices</li>
+                    <li>Basic of SEO</li>
+            </div>
+            <div id="resourses">
+                <h2>Resourses</h2>
+                <ul>
+                    <li><a href="notes/HTML syllabus (1).pdf" download="HTML_syllabus">HTML Syllabus</a></li>
+                    <li><a href="notes/HTML_Complete_Notes.pdf" download="HTML_Complete_Notes">HTML Complete Notes</a></li>
+                    <li><a href="notes/html_timetable.pdf" download="HTML_Time_Table">Time Table</a></li>
+                    
+                </ul>
+            </div>
+            
+        </section>
+        <section class="last">
+            <p>
+                <i>
+                    All The Best for your web development journey!!!!!
+                </i>
+                
+            </p>
         </section>
     </main>
+    <footer>
+        <p><i>Thank you for your support</i></p>
+        <p>For more information, contact me via the contact page or explore the services I offer. <a href="contact.html" title="contact">Contact me</a></p>
+    </footer>
 </body>
 </html>
