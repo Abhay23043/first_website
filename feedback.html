@@ -9,7 +9,7 @@
     <style>
         main{
             text-align: center;
-            padding: 0 20px;
+            
             color: rgb(51, 49, 49);
         }
         .submit-button {
@@ -19,9 +19,27 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin: 10px;
         }
         .submit-button:hover {
             background-color: #45a049; /* Darker green on hover */
+        }
+        .c1{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+            margin-top: 90px;
+            padding:20px;
+            width: 500px;
+            margin-left:480px;
+            
+        }
+        .alert{
+            width: 100%;
+            background: #0486ff;
+            border-radius: 25px;
+            padding: 6px;
+            text-align: center;
+            font-weight: 900;
+            display: none;
         }
     </style>
 </head>
@@ -44,10 +62,12 @@
     </header>
 <hr>
     <main>
-        <h1>Feedback Form</h1>
+       
+    <section class="c1">
+         <h1>Feedback Form</h1>
         <p>Please fill out the form below to provide your feedback.</p>
-    <section>
-         <form action="submit_feedback.php" method="post">
+    <form action="" id="contactForm">
+        
     
     <label for="name">Name:</label><br>
     <input type="text" id="name" name="name" required><br><br>
@@ -68,8 +88,8 @@
     <label for="feedback">Your Feedback:</label><br>
     <textarea id="feedback" name="feedback" rows="5" cols="40" placeholder="Write your feedback here..." required></textarea><br><br>
     
-    <input type="submit" value="Submit Feedback" class="submit-button">
-    
+    <input type="submit" value="Submit Feedback" class="submit-button" id="submit">
+    <div class="alert"><i>Thank you!! feedback submitted</i></div>
   </form>
     </section>
     </main>
@@ -78,6 +98,8 @@
         <p>&copy; 2025 SEO Friendly Website. All rights reserved.</p>
         <p>Designed by Abhay Jaiswal</p>    
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="mail.js"></script>
 
 </body>
 </html>
