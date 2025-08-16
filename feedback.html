@@ -1,105 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>feedback form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        main{
-            text-align: center;
-            
-            color: rgb(51, 49, 49);
-        }
-        .submit-button {
-            background-color: #4CAF50; /* Green */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px;
-        }
-        .submit-button:hover {
-            background-color: #45a049; /* Darker green on hover */
-        }
-        .c1{
-            box-shadow: 0 0 10px rgba(0, 0, 0, 2);
-            margin-top: 90px;
-            padding:20px;
-            width: 500px;
-            margin-left:480px;
-            
-        }
-        .alert{
-            width: 100%;
-            background: #0486ff;
-            border-radius: 25px;
-            padding: 6px;
-            text-align: center;
-            font-weight: 900;
-            display: none;
-        }
+      main {
+        text-align: center;
+
+        color: rgb(51, 49, 49);
+      }
+      .submit-button {
+        background-color: #4caf50; /* Green */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+      }
+      .submit-button:hover {
+        background-color: #45a049; /* Darker green on hover */
+      }
+      .c1 {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+        width: 50vw;
+        position: relative;
+        left: 25vw;
+        top: 10vh;
+      }
+      .alert {
+        width: 50vw;
+        background: #0486ff;
+        border-radius: 25px;
+        padding: 6px;
+        text-align: center;
+        font-weight: 900;
+        display: none;
+        color: black;
+        position: relative;
+        left: 25vw;
+        top: 5px;
+        z-index: 1;
+      }
+      textarea{
+        width: 40vw;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>
-            <big>
-                <a href="index.html">SEO</a>
-            </big>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" title="Home page">Home</a></li>
-                <li><a href="about.html" title="About me">About</a></li>
-                <li><a href="contact.html" title="Contact me">Contact</a></li>
-                <li><a href="services.html" title="Services">Services</a></li>
-                <li><a href="feedback.html" title="feedback form">Feedback</a></li>
-            </ul>
-        </nav>
+      <h1>
+        <big>
+          <a href="index.html">SEO</a>
+        </big>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" title="Home page">Home</a></li>
+          <li><a href="about.html" title="About me">About</a></li>
+          <li><a href="contact.html" title="Contact me">Contact</a></li>
+          <li><a href="services.html" title="Services">Services</a></li>
+          <li><a href="feedback.html" title="feedback form">Feedback</a></li>
+        </ul>
+      </nav>
     </header>
-<hr>
+    <hr />
     <main>
-       
-    <section class="c1">
-         <h1>Feedback Form</h1>
+      <section class="c1">
+        <h1>Feedback Form</h1>
         <p>Please fill out the form below to provide your feedback.</p>
-    <form action="" id="contactForm">
-        
-    
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-    
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-    
-    <label for="rating">Rate Us (1 to 5):</label><br>
-    <select id="rating" name="rating" required>
-      <option value="">--Select--</option>
-      <option value="1">1 - Poor</option>
-      <option value="2">2 - Fair</option>
-      <option value="3">3 - Good</option>
-      <option value="4">4 - Very Good</option>
-      <option value="5">5 - Excellent</option>
-    </select><br><br>
-    
-    <label for="feedback">Your Feedback:</label><br>
-    <textarea id="feedback" name="feedback" rows="5" cols="40" placeholder="Write your feedback here..." required></textarea><br><br>
-    
-    <input type="submit" value="Submit Feedback" class="submit-button" id="submit">
-    <div class="alert"><i>Thank you!! feedback submitted</i></div>
-  </form>
-    </section>
+        <form action="" id="contactForm">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="rating">Rate Us (1 to 5):</label><br />
+          <select id="rating" name="rating" required>
+            <option value="">--Select--</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option></select
+          ><br /><br />
+
+          <label for="feedback">Your Feedback:</label><br />
+          <textarea
+            id="feedback"
+            name="feedback"
+            rows="5"
+            cols="40"
+            placeholder="Write your feedback here..."
+            required
+          ></textarea
+          ><br /><br />
+
+          <input
+            type="submit"
+            value="Submit Feedback"
+            class="submit-button"
+            id="submit"
+          />
+          
+        </form>
+      </section>
+      <div class="alert"><i>Thank you!! feedback submitted</i></div>
     </main>
-    <hr>
+    <hr />
     <footer>
-        <p>&copy; 2025 SEO Friendly Website. All rights reserved.</p>
-        <p>Designed by Abhay Jaiswal</p>    
+      <p>&copy; 2025 SEO Friendly Website. All rights reserved.</p>
+      <p>Designed by Abhay Jaiswal</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="mail.js"></script>
-
-</body>
+  </body>
 </html>
